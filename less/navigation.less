@@ -2,26 +2,43 @@
 
 .navigation{
     @flexboxcenter();
+    justify-content: space-between;
+    margin:5% 0 5% 0;
+    
+    @media @tablet{
     justify-content: space-evenly;
-    border-bottom: 1px dashed black;
-
-    @media (max-width:515px) {
-     
-    h1 {
-    width:100%;
-    @flexboxcenter();
     }
-       
-}
+
+    .h1class {
+    margin-right: 30%;
+    @flexboxcenter();
+
+    @media @tablet{
+    width: 100%;
+    margin:0px;
+        }
+    }
+    
+
     a {
     padding:10px;
     text-decoration: none;
-    font-size:1.8rem;
+    font-size:1.5rem;
     color:black;
     }
-    img{
-        border-top: 1px dashed black;
-        width:100%;
-    }
+    
 }
-
+.border-dash{
+    @flexboxcenter();
+    border-top: 1px dashed @navigation-border;
+}
+img{
+    width:100%;
+    @flexboxcenter();
+    }
+.nav-content-section {
+    border-bottom: 1px dashed black;
+    width:100%;
+    padding-top:5%;
+    @flexboxcenter();
+}
